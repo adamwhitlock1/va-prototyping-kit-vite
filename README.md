@@ -39,7 +39,6 @@ You can also use this repository in a CodeSandbox environment to get started qui
 This kit is designed for VA frontend developers who need to:
 * Quickly prototype new features or pages
 * Create proof of concept ideas
-* Start new projects with VA design system integration
 
 ### What is this kit not for?
 
