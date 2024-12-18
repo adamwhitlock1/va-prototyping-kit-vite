@@ -18,7 +18,7 @@ This kit is built with Vite and React. To get started:
 2. Run `yarn install`
 3. Run `yarn dev` to start the development server
 
-You can also use this repository in a CodeSandbox environment to get started quickly. [Fork this repository in CodeSandbox](https://codesandbox.io/p/github/adamwhitlock1/va-prototyping-kit-vite/main?import=true)
+You can also use this repository in a CodeSandbox environment to get started quickly. [Fork this repository in CodeSandbox](https://codesandbox.io/p/github/adamwhitlock1/va-prototyping-kit-vite/main)
 
 ## Development Guide
 
