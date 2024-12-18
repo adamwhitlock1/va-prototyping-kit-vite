@@ -5,7 +5,7 @@ A barebones rapid prototyping kit for VA frontend development.
 ## Features
 
 * React, React Router, and Vite for modern frontend development
-* USWDS 3.0 integration for government design compliance
+* USWDS 3.0
 * VADS Component Library support
 * Sass preprocessing capabilities
 * Optional Formation integration
