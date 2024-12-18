@@ -35,7 +35,7 @@ export const Home = () => {
       <p>You can even use this repository in a CodeSandbox environment to get started quickly. <va-link external href="https://codesandbox.io/p/github/adamwhitlock1/va-prototyping-kit-vite/main?import=true" text="Fork this repository in CodeSandbox" /></p>
 
       <h3>Adding a new page</h3>
-      <p>To add a new page, create a new file in the <code>/src/pages</code> directory. Then add a new route to the <code>/src/RouteTree.jsx</code> file.</p>
+      <p>To add a new page, create a new file in the <code>/src/pages</code> directory. Then add a new route to the <code>/src/Router.jsx</code> file.</p>
 
       <h3>Adding a new component</h3>
       <p>To add a new component, create a new file in the <code>/src/components</code> directory. Then import your component into your page where needed.</p>
