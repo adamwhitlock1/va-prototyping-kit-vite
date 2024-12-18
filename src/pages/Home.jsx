@@ -32,7 +32,7 @@ export const Home = () => {
 
       <h2>Getting Started</h2>
       <p>This kit is built with Vite and React. To get started, clone the repository and run <code>yarn install</code>. Then run <code>yarn dev</code> to start the development server.</p>
-      <p>You can even use this repository in a CodeSandbox environment to get started quickly. <va-link external href="https://codesandbox.io/s/va-prototyping-kit-forked-011111111111111111111111?file=/src/pages/Home.jsx" text="Fork this repository in CodeSandbox" /></p>
+      <p>You can even use this repository in a CodeSandbox environment to get started quickly. <va-link external href="https://codesandbox.io/p/github/adamwhitlock1/va-prototyping-kit-vite/main?import=true" text="Fork this repository in CodeSandbox" /></p>
 
       <h3>Adding a new page</h3>
       <p>To add a new page, create a new file in the <code>/src/pages</code> directory. Then add a new route to the <code>/src/RouteTree.jsx</code> file.</p>
