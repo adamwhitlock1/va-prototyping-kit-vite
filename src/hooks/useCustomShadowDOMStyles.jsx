@@ -54,18 +54,18 @@ export const useCustomShadowDOMStyles = ({
 
 
 
-    // Helper to process a component
+    // to process a component to apply styles
     const processComponent = (component) => {
       if (!component) return false;
 
       let stylesApplied = false;
 
-      // Apply styles to the component's shadow DOM
+      // styles on the component's shadow DOM
       if (component.shadowRoot) {
         stylesApplied = applyStylesToShadowRoot(component.shadowRoot, styles);
       }
 
-      // Handle nested shadow DOMs
+      // handling nested shadow DOMs
       if (nested && component.shadowRoot) {
         targetSelectors.forEach(selector => {
           const nestedComponents = component.shadowRoot.querySelectorAll(selector);
@@ -77,7 +77,7 @@ export const useCustomShadowDOMStyles = ({
         });
       }
 
-      // Handle slotted elements
+      // handling slotted elements
       if (checkSlotted) {
         targetSelectors.forEach(selector => {
           const slottedComponents = component.querySelectorAll(selector);
@@ -92,6 +92,8 @@ export const useCustomShadowDOMStyles = ({
       return stylesApplied;
     };
 
+    // observer for changes to the DOM, this is needed to apply styles to new components that are added to the DOM
+    // when the component is added to the DOM, the styles are not applied until the next render
     const observer = new MutationObserver((_mutations) => {
       let stylesApplied = false;
 
