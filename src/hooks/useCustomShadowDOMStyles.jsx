@@ -1,5 +1,9 @@
 import { useEffect, useMemo } from 'react';
 
+// Note: this hook is not recommended for production use and is generally pretty cursed.
+// It is a quick and dirty way to apply styles to web components that are added to the DOM.
+// I mostly wanted to see if I 'could' do it, not necessarily that I 'should'
+
 const DEFAULT_OBSERVER_OPTIONS = {
   childList: true,
   subtree: true,
