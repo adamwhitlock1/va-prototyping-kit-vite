@@ -1,4 +1,4 @@
-export const Home = () => {
+const Home = () => {
   return (
     <>
       <div className="grid-row">
@@ -52,3 +52,5 @@ export const Home = () => {
     </>
   )
 }
+
+export default Home

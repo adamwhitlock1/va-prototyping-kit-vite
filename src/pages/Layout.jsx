@@ -1,6 +1,8 @@
 import '@department-of-veterans-affairs/formation/dist/formation.min.css'
 
-export const Layout = () => {
+
+const Layout = () => {
+
   return (
     <div>
 
@@ -38,9 +40,13 @@ export const Layout = () => {
 
 
       <section>
-
         <h2>Layout via VADS Formation (legacy)</h2>
-        <p><strong>Note:</strong> This layout system requires the Formation package css to be imported. Only this route currently has Formation imported to show the layout utilities, but you can import it in other routes if needed.</p>
+
+        <p><strong>Note:</strong> This layout system requires the Formation package css to be imported at the application level.</p>
+
+        <p>
+          <code>import &#39;@department-of-veterans-affairs/formation/dist/formation.min.css&#39;</code>
+        </p>
 
         <div className="vads-l-row">
           <va-link external href="https://design.va.gov/foundation/layout/flexbox-grid" text="View VADS Flexbox Grid Documentation" />
@@ -63,5 +69,8 @@ export const Layout = () => {
 
 
     </div >
+
   )
-}
+};
+
+export default Layout;

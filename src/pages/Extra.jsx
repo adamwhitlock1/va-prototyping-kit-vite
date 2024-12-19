@@ -1,6 +1,6 @@
 import '../index.scss';
 
-export const Extra = () => {
+const Extra = () => {
   return (
     <div>
       <h1>Extra</h1>
@@ -25,4 +25,6 @@ export const Extra = () => {
 
     </div>
   )
-}
+};
+
+export default Extra;
