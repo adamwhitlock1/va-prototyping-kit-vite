@@ -1,14 +1,27 @@
-import { useComponentStyles } from "../../hooks/useComponentStyles";
+import { useCustomShadowDOMStyles } from "../../hooks/useCustomShadowDOMStyles";
 
 // Usage in your component
 export const CheckboxGroupCustomStyles = () => {
-  const styles = `
+  const stylesGroup = `
     .usa-legend {
       font-weight: var(--font-weight-bold);
       font-family: var(--font-family-serif);
     }
+
+
   `;
-  useComponentStyles('va-checkbox-group', styles);
+
+  const stylesCheckbox = `
+    .usa-checkbox__label-description {
+      white-space: pre-line;
+    }
+  `;
+
+  // styling the checkbox group legend. A direct child of the checkbox group.
+  useCustomShadowDOMStyles({ selectors: 'va-checkbox-group', styles: stylesGroup });
+
+  // styling the checkbox label description. A direct child of the checkbox, but not a direct child of the checkbox group.
+  useCustomShadowDOMStyles({ selectors: ['va-checkbox-group', 'va-checkbox'], styles: stylesCheckbox });
 
   return (
     <div>
@@ -19,7 +32,7 @@ export const CheckboxGroupCustomStyles = () => {
           label="Select any historical figure"
         >
           <va-checkbox
-            checkbox-description="This is optional text that can be used to describe the label in more detail."
+            checkbox-description={`Quantity: 5 \n Last ordered on: 2022-05-26 with line break`}
             id="soujourner-truth"
             label="Soujourner Truth"
             name="group1"
